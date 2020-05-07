@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_gradient_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_gradient_bg"
+        android:text="Patient Clinic Search"
+        android:textAlignment="center"
+        android:textColor="#E0F1F8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fill Single Search bar"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/clinicAddress_Search"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:ems="10"
+            android:hint="  Search By Address"
+            android:inputType="textPersonName"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/clinicService_Search"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@android:drawable/spinner_dropdown_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/dayspin"
+                android:layout_width="100sp"
+                android:layout_height="32sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginBottom="4sp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="32sp"
+                android:text="From"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/fromtime"
+                android:layout_width="55sp"
+                android:layout_height="32sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginBottom="4sp"
+                android:background="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/fromAP"
+                android:layout_width="50sp"
+                android:layout_height="32sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginBottom="4sp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="25sp"
+                android:layout_height="32sp"
+                android:text="To"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/aftertime"
+                android:layout_width="55sp"
+                android:layout_height="32sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginBottom="4sp"
+                android:background="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/afterAP"
+                android:layout_width="50sp"
+                android:layout_height="32sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginBottom="4sp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/findClinics"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="Find"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backpic"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:alpha="100"
+        app:srcCompat="@drawable/cloud" />
+
+    <Button
+        android:id="@+id/mainBut"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="160sp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginRight="126dp"
+        android:alpha="100"
+        android:background="@android:drawable/spinner_background"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:shadowColor="#49810A"
+        android:text="ENTER"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="253dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="120sp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginRight="71dp"
+        android:alpha="100"
+        android:fontFamily="sans-serif-smallcaps"
+        android:shadowColor="#D7662424"
+        android:text="@string/appName"
+        android:textColor="#0F1357"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

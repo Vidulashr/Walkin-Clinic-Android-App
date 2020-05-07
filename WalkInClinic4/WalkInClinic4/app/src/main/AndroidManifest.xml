@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.walkinclinic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DisplayClinic"></activity>
+        <activity android:name=".ClinicViewer" />
+        <activity android:name=".PatientForm" />
+        <activity android:name=".EmployeeForm" />
+        <activity android:name=".ServiceForm" />
+        <activity android:name=".UserList" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".PatientHome" />
+        <activity android:name=".ClinicRating"/>
+        <activity android:name=".ServiceViewer" />
+        <activity android:name=".ClinicAccount" />
+        <activity android:name=".ClinicHours" />
+        <activity android:name=".ClinicServiceViewer" />
+        <activity android:name=".ServiceEditer" />
+        <activity android:name=".EmployeeHome" />
+        <activity android:name=".SelectAccountType" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_gradient_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/text_completeprofile"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="15sp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="Clinic Profile"
+        android:textColor="#08163D"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clinicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Clinic Name:"
+        android:textColor="#08163D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txt_clinicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:ems="10"
+        android:hint="Add name..."
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/clinicAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="*Clinic Address:"
+        android:textColor="#08163D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_clinicAddress"
+            android:layout_width="375sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:ems="10"
+            android:hint="Add address..."
+            android:inputType="textPersonName" />
+
+        <RadioButton
+            android:id="@+id/location_verificationclinic"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_gravity="right"
+            android:background="@android:drawable/ic_menu_mylocation"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/clinicPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Clinic Phone:"
+        android:textColor="#08163D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txt_clinicPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:ems="10"
+        android:hint="Add phone..."
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/clinicDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Clinic Description:"
+        android:textColor="#08163D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txt_clinicDescription"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Add description..."
+        android:inputType="textMultiLine" />
+
+    <Switch
+        android:id="@+id/toggle_license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:background="@android:drawable/bottom_bar"
+        android:gravity="center|left"
+        android:text="  Licensed"
+        android:textColor="#08163D"
+        android:textOff="Not Licensed"
+        android:textOn="Licensed"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_completeClinic"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="5sp"
+        android:background="@android:drawable/spinner_background"
+        android:text="Complete profile" />
+
+    <Button
+        android:id="@+id/btn_currentClinic"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="5sp"
+        android:background="@android:drawable/spinner_background"
+        android:text="Show current" />
+
+    <Button
+        android:id="@+id/btn_updateClinic"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:background="@android:drawable/spinner_background"
+        android:text="Update Profile" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeMessage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_gradient_bg"
+    tools:context=".AdminHome">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="418dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_users"
+        app:srcCompat="@drawable/dark_gradient_bg"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/admintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="278dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Admin Home Screen"
+        android:textColor="#E8F2F7"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300sp"
+        android:layout_height="120sp"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/appName"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <Button
+        android:id="@+id/createService"
+        android:layout_width="200sp"
+        android:layout_height="75sp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="148dp"
+        android:background="@android:drawable/spinner_background"
+        android:text="Services"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_users"
+        android:layout_width="200sp"
+        android:layout_height="75sp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:drawable/spinner_background"
+        android:text="Users"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/createService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

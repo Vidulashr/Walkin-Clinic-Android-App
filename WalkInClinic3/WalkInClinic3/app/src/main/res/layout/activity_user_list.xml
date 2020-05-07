@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userlistviewlistview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_gradient_bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/usernameview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:ems="10"
+        android:hint="Enter Username..."
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_userDelete"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:background="@android:drawable/spinner_background"
+        android:text="Remove" />
+
+    <TextView
+        android:id="@+id/userlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/dark_gradient_bg"
+        android:text="Current Users:"
+        android:textColor="#E8F2F7"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listviewuser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

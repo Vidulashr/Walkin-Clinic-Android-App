@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/light_gradient_bg"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_gradient_bg"
+            android:text="Available Clinics"
+            android:textColor="#E0F1F8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/clinicName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Clinic Name .. "
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/userBookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/spinner_background"
+            android:text="Book Now" />
+
+
+        <ListView
+            android:id="@+id/listOfClinics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/light_gradient_bg"></ListView>
+</LinearLayout>
+

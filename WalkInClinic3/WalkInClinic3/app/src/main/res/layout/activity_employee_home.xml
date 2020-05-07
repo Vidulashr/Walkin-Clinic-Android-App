@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_gradient_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/employeetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Employee Home Screen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="right"
+            android:text="USER" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_gravity="center"
+        android:layout_margin="25sp"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/appName"
+        android:textAlignment="center"
+        android:textDirection="firstStrongRtl"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <TextView
+        android:id="@+id/txt_completewarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="*Complete Clinic Profile in YOUR CLINIC*"
+        android:textColor="#FF5252" />
+
+    <TextView
+        android:id="@+id/txt_homeClinicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Clinic Name here"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_homeClinicAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Clinic Address Here"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_homeClinicPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50sp"
+        android:text="Clinic Phone here"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dark_gradient_bg"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_clinic_account"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="Your clinic" />
+
+        <Button
+            android:id="@+id/btn_service_employee"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="Edit Services" />
+
+        <Button
+            android:id="@+id/btn_yourservices"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="Your Services" />
+
+        <Button
+            android:id="@+id/btn_addHours"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:background="@android:drawable/spinner_background"
+            android:text="Your hours" />
+    </LinearLayout>
+
+</LinearLayout>

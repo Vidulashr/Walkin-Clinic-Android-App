@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EncryptedDatabase</string>
+    <string name="addData">Add Data!</string>
+    <string name="viewData">View Data!</string>
+    <string name="writeData">Write Data!</string>
+    <string name="readData">Information ...</string>
+    <string name="username">Enter username..</string>
+    <string name="password">Enter password ..</string>
+</resources>
